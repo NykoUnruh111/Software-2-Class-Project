@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewControllers.ModifyAppointmentFormController">
+   <children>
+      <AnchorPane prefHeight="811.0" prefWidth="731.0">
+         <children>
+            <Text fx:id="modAppointmentIDLabel" layoutX="200.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment ID: " textAlignment="CENTER" wrappingWidth="165.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="modAppointmentIDTextField" editable="false" layoutX="366.0" layoutY="81.0" text="Auto-Generated" />
+            <Text fx:id="modAppointmentTitleLabel" layoutX="200.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title: " textAlignment="CENTER" wrappingWidth="165.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="modAppointmentTitleTextField" layoutX="366.0" layoutY="135.0" />
+            <Text fx:id="modAppointmentDescriptionLabel" layoutX="200.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description: " textAlignment="CENTER" wrappingWidth="165.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="modAppointmentDescriptionTextField" layoutX="366.0" layoutY="186.0" prefHeight="27.0" prefWidth="149.0" />
+            <Text fx:id="modAppointmentLocationLabel" layoutX="200.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location:" textAlignment="CENTER" wrappingWidth="165.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="modAppointmentLocationTextField" layoutX="366.0" layoutY="237.0" />
+            <Text fx:id="modAppointmentContactLabel" layoutX="200.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact: " textAlignment="CENTER" wrappingWidth="165.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="modAppointmentTypeLabel" layoutX="200.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type: " textAlignment="CENTER" wrappingWidth="165.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="modAppointmentStartLabel" layoutX="200.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start date:" textAlignment="CENTER" wrappingWidth="165.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="modAppointmentEndLabel" layoutX="203.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End date:" textAlignment="CENTER" wrappingWidth="165.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="modAppointmentCustomerIDLabel" layoutX="197.0" layoutY="586.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID:" textAlignment="CENTER" wrappingWidth="165.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="modAppointmentCustomerIDTextField" layoutX="363.0" layoutY="565.0" />
+            <Text fx:id="modAppointmentUserIDLabel" layoutX="197.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID:" textAlignment="CENTER" wrappingWidth="165.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="modAppointmentUserIDTextfield" layoutX="363.0" layoutY="611.0" />
+            <Button fx:id="modAppointmentUpdateButton" layoutX="323.0" layoutY="701.0" mnemonicParsing="false" onAction="#handleModAppointmentUpdate" prefHeight="55.0" prefWidth="88.0" text="Update" />
+            <Button fx:id="modAppointmentCancelButton" layoutX="472.0" layoutY="701.0" mnemonicParsing="false" onAction="#handleModAppointmentCancel" prefHeight="55.0" prefWidth="88.0" text="Cancel" />
+            <ComboBox fx:id="modAppointmentContactCombobox" layoutX="366.0" layoutY="285.0" prefWidth="150.0" promptText="Contact" />
+            <DatePicker fx:id="modAppointmentStartDate" layoutX="354.0" layoutY="377.0" />
+            <DatePicker fx:id="modAppointmentEndDate" layoutX="357.0" layoutY="472.0" />
+            <Text fx:id="modAppointmentStartTimeLabel" layoutX="203.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start time:" textAlignment="CENTER" wrappingWidth="165.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="modAppointmentEndTimeLabel" layoutX="203.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End time:" textAlignment="CENTER" wrappingWidth="165.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="modAppointmentEndTimeCombobox" layoutX="363.0" layoutY="520.0" prefWidth="150.0" promptText="End Time" />
+            <ComboBox fx:id="modAppointmentStartTimeCombobox" layoutX="366.0" layoutY="425.0" prefWidth="150.0" promptText="Start Time" />
+            <ComboBox fx:id="modAppointmentTypeComboBox" layoutX="365.0" layoutY="333.0" prefWidth="150.0" promptText="Type" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

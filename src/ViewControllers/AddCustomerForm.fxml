@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewControllers.AddCustomerFormController">
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <Text fx:id="addCustomerNameLabel" layoutX="195.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name: " textAlignment="CENTER" wrappingWidth="165.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="addCustomerAddressLabel" layoutX="187.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Street Address: " textAlignment="CENTER" wrappingWidth="181.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="addCustomerIDLabel" layoutX="195.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID: " textAlignment="CENTER" wrappingWidth="165.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="addCustomerPostalLabel" layoutX="187.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postal Code: " textAlignment="CENTER" wrappingWidth="181.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="addCustomerPhoneLabel" layoutX="187.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number: " textAlignment="CENTER" wrappingWidth="181.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="addCustomerDivisionLabel" layoutX="187.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State/Province: " textAlignment="CENTER" wrappingWidth="181.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="addCustomerCountryLabel" layoutX="187.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country: " textAlignment="CENTER" wrappingWidth="181.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="addCustomerIDTextField" editable="false" layoutX="370.0" layoutY="79.0" text="Auto-Generated" />
+            <TextField fx:id="addCustomerNameTextField" layoutX="370.0" layoutY="137.0" />
+            <TextField fx:id="addCustomerAddressTextField" layoutX="372.0" layoutY="333.0" />
+            <TextField fx:id="addCustomerPostalTextField" layoutX="370.0" layoutY="394.0" />
+            <TextField fx:id="addCustomerPhoneTextField" layoutX="372.0" layoutY="456.0" />
+            <Button fx:id="addCustomerSaveButton" layoutX="344.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleAddCustomerSave" prefHeight="55.0" prefWidth="88.0" text="Save" />
+            <Button fx:id="addCustomerCancelButton" layoutX="480.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleAddCustomerCancel" prefHeight="55.0" prefWidth="88.0" text="Cancel" />
+            <ComboBox fx:id="addCustomerCountryComboBox" layoutX="373.0" layoutY="202.0" onAction="#handleCountryChange" prefWidth="150.0" promptText="Country" />
+            <ComboBox fx:id="addCustomerDivisionComboBox" layoutX="371.0" layoutY="268.0" prefWidth="150.0" promptText="State/Province" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
